@@ -5,4 +5,13 @@ canvas {
 
 body {
     background-color: black;
+    padding: 5em;
+}
+
+h1 {
+    color: beige;
+}
+
+h2 {
+    color: beige
 }

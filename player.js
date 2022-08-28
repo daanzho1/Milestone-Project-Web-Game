@@ -6,6 +6,7 @@ let isJump = false;
 let jumpSpeed = 0;
 let score = 0;
 let scoreLabel;
+// start game function 
 
 function startGame() {
     gameCanvas.start();
@@ -13,6 +14,7 @@ function startGame() {
     block = new createBlock();
     scoreLabel = new createScoreLabel(10, 30);
 }
+//create player for game 
 
 function createPlayer(width, height, x) {
     this.width = width;
@@ -49,6 +51,7 @@ function createPlayer(width, height, x) {
         }
     }
 }
+// attack block to interfere with player 
 
 function createBlock() {
     var width = randomNumber(10, 50);
@@ -79,6 +82,7 @@ function createBlock() {
         }
     }
 }
+// keep score of how many successful attempts
 
 function createScoreLabel(x, y) {
     this.score = 0;
@@ -91,6 +95,7 @@ function createScoreLabel(x, y) {
         ctx.fillText(this.text, this.x, this.y);
     }
 }
+// detect Collison when block is interrupted 
 
 function detectCollision() {
     var playerLeft = player.x
@@ -129,6 +134,7 @@ function updateCanvas() {
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
+// Jump needs to be reset after every landing
 
 function resetJump() {
     jumpSpeed = 1;

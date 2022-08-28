@@ -1,5 +1,5 @@
-let canvasWidth = 800;
-let canvasHeight = 500;
+let canvasWidth = 1500;
+let canvasHeight = 700;
 
 function startGame() {
     gameCanvas.start();
