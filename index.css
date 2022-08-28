@@ -1,4 +1,8 @@
 canvas {
     border: 2px solid black;
-    background-color: #0303ff;
+    background-color: turquoise;
+}
+
+body {
+    background-color: black;
 }

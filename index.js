@@ -1,5 +1,5 @@
-let canvasWidth = 600;
-let canvasHeight = 400;
+let canvasWidth = 800;
+let canvasHeight = 500;
 
 function startGame() {
     gameCanvas.start();
@@ -12,6 +12,7 @@ let gameCanvas = {
         this.canvas.height = canvasHeight;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+
 
 
     }
